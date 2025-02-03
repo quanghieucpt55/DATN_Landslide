@@ -1,0 +1,36 @@
+# Ignore build files
+*.o
+*.elf
+*.bin
+*.hex
+*.map
+*.lst
+*.d
+*.axf
+*.dep
+*.out
+
+# Ignore Keil/uVision project files
+*.uvoptx
+*.uvopt
+*.uvgui.*
+*.bak
+
+# Ignore STM32CubeMX generated files
+*.mxproject
+*.ioc
+
+# Ignore VS Code settings
+.vscode/
+*.code-workspace
+
+# Ignore build directories
+build/
+Debug/
+Release/
+Middlewares/
+Drivers/
+
+# Ignore system files
+.DS_Store
+Thumbs.db

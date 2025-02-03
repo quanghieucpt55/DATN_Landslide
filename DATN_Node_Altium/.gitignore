@@ -1,0 +1,41 @@
+# Ignore Altium Designer generated files
+*.PrjPcbStructure
+*.PcbDocPreview
+*.Db
+*.SvnDb
+*.Cmp
+*.CMP
+*.log
+*.log2
+*.rpt
+*.ini
+*.DsnWrk
+*.dsgn
+*.Dft
+*.Odb
+*.Cam
+*.Camtastic
+*.ckt
+*.cbl
+*.ftf
+*.highlight
+*.BatchPCB
+*.outjob
+*.IntLib
+*.SchDocPreview
+*.cache
+*.autosave
+*.Recovery
+
+# Ignore Altium output files
+*.zip
+*.rar
+*.7z
+*.tar.gz
+*.tmp
+*.bak
+*.Backup*
+
+# Ignore system files
+.DS_Store
+Thumbs.db

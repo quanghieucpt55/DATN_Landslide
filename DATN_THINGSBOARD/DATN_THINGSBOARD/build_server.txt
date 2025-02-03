@@ -1,0 +1,22 @@
+1. Install Docker
+2. Choose Thingsboard queue service: In memory
+3. Create docker compose file for ThingsBoard queue service: nano docker-compose.yml
+Add the following lines to the yml file:
+version: '3.0'
+services:
+  mytb:
+    restart: always
+    image: "thingsboard/tb-postgres"
+    ports:
+      - "8080:9090"
+      - "1883:1883"
+      - "7070:7070"
+      - "5683-5688:5683-5688/udp"
+    environment:
+      TB_QUEUE_TYPE: in-memory
+    volumes:
+      - ~/.mytb-data:/data
+      - ~/.mytb-logs:/var/log/thingsboard
+4. Set the terminal in the directory which contains the docker-compose.yml
+docker compose up -d
+docker compose logs -f mytb

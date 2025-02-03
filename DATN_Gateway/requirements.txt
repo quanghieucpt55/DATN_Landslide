@@ -1,0 +1,12 @@
+certifi==2024.8.30
+charset-normalizer==3.4.0
+idna==3.10
+lgpio==0.2.2.0
+mmh3==5.0.1
+orjson==3.10.11
+paho-mqtt==2.1.0
+pyserial==3.5
+requests==2.32.3
+rpi-lgpio==0.6
+tb-mqtt-client==1.10.10
+urllib3==2.2.3
