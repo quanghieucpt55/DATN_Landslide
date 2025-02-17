@@ -97,7 +97,7 @@ uint8_t MPU6050_Init(I2C_HandleTypeDef *I2Cx)
 				HAL_I2C_Mem_Write(I2Cx, MPU6050_ADDR, MPU6050_REG_INT_ENABLE, 1, &Data, 1, i2c_timeout);
 
 				// Set motion thresholdThiết lập ngưỡng chuyển động (MOT_THR)
-				Data = 0x02; 
+				Data = 0x04; 
 				HAL_I2C_Mem_Write(I2Cx, MPU6050_ADDR, MPU6050_REG_MOT_THR, 1, &Data, 1, i2c_timeout);
 
 				// Set motion time(MOT_DUR)
